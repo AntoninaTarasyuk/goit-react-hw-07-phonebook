@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import { Box } from "../box";
 import { Btn } from "../Button/Button"
 import { useDispatch } from "react-redux";
-import { addContact } from "redux/contactsSlice";
+import { addContact } from "redux/operations";
 
 const FormStyled = styled(Form)`
   display: flex;

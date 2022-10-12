@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Formik, Form, Field } from "formik";
 import { filterContacts } from "redux/contactsSlice";
+import { selectFilter } from "redux/selectors";
 import { Box } from "../box";
 import styled from "@emotion/styled";
 
@@ -24,7 +25,7 @@ const Input = styled(Field)`
 `
 
 export const Filter = () => {
-  const filter = useSelector(state => state.contacts.filter);
+  const filter = useSelector(selectFilter);
   const dispatch = useDispatch();
 
   return (
